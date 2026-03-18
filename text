@@ -1,0 +1,17 @@
+dependecnys
+express
+dotenv
+cors
+helemt
+argon2/bcrypt
+uuid
+jwt
+multer
+joi/express vaidater/yup
+mogoDb/moggose/pg/prisma/sequlise
+
+devdepdency
+nodemone
+
+
+npm install express dotenv cors helmet bcrypt uuid jsonwebtoken multer && npm install nodemone -D
