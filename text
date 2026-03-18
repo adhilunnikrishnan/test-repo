@@ -15,3 +15,20 @@ nodemone
 
 
 npm install express dotenv cors helmet bcrypt uuid jsonwebtoken multer && npm install nodemone -D
+
+Destructure the data
+
+should conform if we have the data
+
+should check the existing user in Database
+
+Stucture the database schema
+
+Return with status code 201
+
+database connection snippet should be added db.js
+
+mongodb URL should be added in .env file
+
+check connection to database  server.js 
+
