@@ -4,7 +4,7 @@ import helmet from "helmet";
 import dotenv from "dotenv";
 // import connectDB from "./config/db.js";
 // import userRoutes from "./routes/userRoutes.js";
-// import authRoutes from "./routes/authRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
 
 dotenv.config();
 
@@ -18,7 +18,7 @@ app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// app.use("/api/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 // app.use("/api/users", userRoutes);
 
 
