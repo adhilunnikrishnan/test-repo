@@ -25,10 +25,17 @@ export const registerUser = async (req, res) => {
       username,
       email,
       password:hashedPassword,
-      userId:uuidv7
+      userId:uuidv7(),
+      createdAt: new Date(),
+      isBlocked: false,
+      isDeleted: false,
     }
-    
-    res.status(200).json({ message: "User registered successfully" });
+    console.log("stuctured data",inputData)
+
+    const result = await db.collection("users").insertOne(inputData);
+    console.log("database query result",result)
+
+    res.status(200).json({ message: "User registered successfully",result });
 
   } catch (error) {
     console.error("Error registering user:", error);
